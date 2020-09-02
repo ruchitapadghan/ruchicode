@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Form</title>
+
+<style type="text/css">
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+  body
+  {
+    background-color: powderblue;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 140px;
+}
+
+.regform{
+    width: 780px;
+    background-color: rgba(0,0,0,0.7);
+    margin:auto;
+    color: #ffffff;
+    padding: 20px 0px 20px 20px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main{
+    background-color: rgba(0,0,0,0.4);
+    width: 800px;
+    margin:auto;
+}
+
+form{
+    padding: 50px;
+
+}
+
+.name{
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 125px;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.firstname{
+    position: relative;
+    left: 200px;
+    top: -25px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+
+}
+
+.name1{
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 125px;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lastname{
+    position: relative;
+    left: 200px;
+    top: -25px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 22px;
+    font-size: 16px;
+
+}
+
+.name2{
+    margin-left: 25px;
+    margin-top: 60px;
+    width: 125px;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.class{
+    position: relative;
+    left: 200px;
+    top: -25px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.name3{
+    margin-left: 25px;
+    margin-top: 80px;
+    width: 125px;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.year{
+    position: relative;
+    left: 200px;
+    top: -25px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.name4{
+    margin-left: 25px;
+    margin-top: 100px;
+    width: 125px;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.percent{
+    position: relative;
+    left: 200px;
+    top: -25px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 22px;
+    font-size: 16px
+}
+button{
+    background-color: #3BAF9F;
+
+    display: block;
+    margin: 10px 0px 0px 240px;
+    text-align: center;
+    border-radius: 20px;
+    border:5px solid #366473;
+    padding: 15px 30px;
+    outline: none;
+    color: white;
+    cursor:pointer;
+    transition:0.20px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+</style>
+</head>
+
+<title>Form</title>
+<body>
+<div class="regform">
+    <h1>
+        School Admission Form
+    </h1>
+</div>
+<div class="main">
+<form>
+
+    <div id="name">
+    <label class="firstlabel"><h3>First Name:</h3></label>
+    <input class="firstname" type="text" name="first_name" pattern="[a-zA-Z]+"maxlength="20" required>
+    </div>
+
+
+    <div id="name1">
+    <label class="lastlabel"><h3>Last Name:</h3></label>
+    <input class="lastname"type="text"name="last_name" pattern="[a-zA-Z]+"maxlength="20"required>
+    </div>
+
+
+    <div id="name2">
+    <label class="classlabel"><h3>Class:</h3></label>
+    <input class="class" type="text" name="class" pattern="[a-zA-Z0-9]+"maxlength="2"required>
+    </div>
+
+   <div id="name3">
+   <label class="yearlabel"><h3>Year Of passing:</h3></label>
+   <input class="year" type="number"name="year" min="1990" max="2017"required>
+</div>
+
+<div id="name4">
+    <label class="percentlabel"><h3>Percentage:</h3></label>
+    <input class="percent" type="text" name="percent" pattern="[0-9]+% "maxlength="3"required>
+</div>
+
+ <button type="Submit">Submission</button>
+</div>
+</form>
+</body>
+</html>
